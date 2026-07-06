@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <circle cx="100" cy="100" r="96" fill="#C5161D" stroke="#080808" stroke-width="4"/>
+  <circle cx="100" cy="78" r="38" fill="#C5161D"/>
+  <path fill="#fff" d="M82 95V62h8l6 14 6-14h8v33h-6V74l-5 12h-4l-5-12v21h-6z"/>
+  <text x="100" y="138" text-anchor="middle" fill="#080808" font-family="Arial,sans-serif" font-size="18" font-weight="700">MILO`EVI</text>
+  <text x="100" y="158" text-anchor="middle" fill="#080808" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">BUDUNOST GRADNJE</text>
+</svg>
