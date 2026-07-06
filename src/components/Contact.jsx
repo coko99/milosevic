@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { contact } from '../data/content'
 import { Icon } from './Icons'
+import SocialLinks from './SocialLinks'
 import { Reveal } from '../hooks/useInView'
 
 export default function Contact({ embedded = false }) {
@@ -71,6 +72,11 @@ export default function Contact({ embedded = false }) {
                 <a href={`mailto:${contact.email}`} className="btn btn--secondary">
                   Pošaljite email
                 </a>
+              </div>
+
+              <div className="contact__social">
+                <strong>Društvene mreže</strong>
+                <SocialLinks />
               </div>
             </div>
           </Reveal>

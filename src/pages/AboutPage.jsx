@@ -36,6 +36,32 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="section about-expertise">
+        <div className="container about-expertise__grid">
+          <Reveal className="about-expertise__content">
+            <span className="eyebrow">{aboutContent.expertise.eyebrow}</span>
+            <h2>{aboutContent.expertise.title}</h2>
+            <p>{aboutContent.expertise.text}</p>
+            <ul className="about-expertise__points">
+              {aboutContent.expertise.points.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <Reveal className="about-expertise__visual" delay={120}>
+            <div className="about-expertise__image">
+              <img
+                src={aboutContent.expertise.image}
+                alt="Savetnica u salonu Milošević DOO prikazuje keramičke uzorke"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="section facilities-info">
         <div className="container">
           <Reveal className="section__header section__header--center">

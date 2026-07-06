@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { navLinks, contact } from '../data/content'
+import SocialLinks from './SocialLinks'
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -18,6 +19,7 @@ export default function Footer() {
             Salon keramike i opreme za kupatila. Keramika, sanitarije i
             enterijerska rešenja za prostor koji traje.
           </p>
+          <SocialLinks className="footer__social" />
         </div>
 
         <div className="footer__links">
@@ -43,8 +45,23 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <div className="container">
+        <div className="container footer__bottom-inner">
           <p>&copy; {year} {contact.company} — Sva prava zadržana.</p>
+          <a
+            href="https://cokoladni.photo"
+            className="footer__powered"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Powered by Čokoladni AJ TI"
+          >
+            <span>powered by</span>
+            <img
+              src="/logo-cokoladni.png"
+              alt="Čokoladni AJ TI"
+              className="footer__powered-logo"
+            />
+            <strong>Čokoladni AJ TI</strong>
+          </a>
         </div>
       </div>
     </footer>

@@ -25,7 +25,11 @@ export default function Header() {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : ''
-    return () => { document.body.style.overflow = '' }
+    document.body.classList.toggle('menu-open', menuOpen)
+    return () => {
+      document.body.style.overflow = ''
+      document.body.classList.remove('menu-open')
+    }
   }, [menuOpen])
 
   const close = () => setMenuOpen(false)

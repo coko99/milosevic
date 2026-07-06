@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPage'
 import InspirationPage from './pages/InspirationPage'
 import ContactPage from './pages/ContactPage'
 import PartnersPage from './pages/PartnersPage'
+import MajstoriPage from './pages/MajstoriPage'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="o-nama" element={<AboutPage />} />
         <Route path="ponuda" element={<OfferPage />} />
+        <Route path="majstori" element={<MajstoriPage />} />
         <Route path="usluge" element={<ServicesPage />} />
         <Route path="inspiracija" element={<InspirationPage />} />
         <Route path="partneri" element={<PartnersPage />} />
