@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import { preloaderQuotes } from '../data/content'
 
 const TILES = 20
 
@@ -8,11 +9,17 @@ function unlockScroll() {
   document.body.style.overflow = ''
 }
 
+function pickQuote() {
+  return preloaderQuotes[Math.floor(Math.random() * preloaderQuotes.length)]
+}
+
 export default function Preloader() {
   const { pathname } = useLocation()
   const [phase, setPhase] = useState('loading')
+  const [quote, setQuote] = useState(pickQuote)
 
   useEffect(() => {
+    setQuote(pickQuote())
     setPhase('loading')
     document.body.classList.add('preloader-active')
 
@@ -58,6 +65,10 @@ export default function Preloader() {
           />
         </div>
       </div>
+
+      <p className="preloader__quote" key={quote}>
+        {quote}
+      </p>
 
       <div className="preloader__credit">
         <span className="preloader__credit-glow" aria-hidden="true" />

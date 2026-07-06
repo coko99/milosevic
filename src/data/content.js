@@ -9,6 +9,45 @@ export const navLinks = [
   { to: '/kontakt', label: 'Kontakt' },
 ]
 
+export const preloaderQuotes = [
+  'Nije krivo, zid je takav...',
+  'Nije do pločice, do svetla je...',
+  'To se posle ne vidi...',
+  'Samo malo da ga doteramo...',
+  'Ma leglo je, samo izgleda tako...',
+  'Ne brini, fuga će to da sredi...',
+  'To je namerno pod uglom...',
+  'Nije puklo, to je dezen...',
+  'Samo da se osuši pa gledamo...',
+  'Danas grubo, sutra fino...',
+  'Još samo silikon i kao novo...',
+  'Nije neravno, takav je pod...',
+  'To majstor vidi, mušterija ne...',
+  'Biće ravno kad se završi...',
+  'Samo da uhvatimo pravu liniju...',
+  'Ovo je sad najteži deo...',
+  'Nema tu filozofije... samo polako.',
+  'Još jedna sitnica i gotovo...',
+  'Samo da proverim laser...',
+  'To je zbog zida, nije do nas...',
+  'Majstor zna šta radi... uglavnom.',
+  'Pločica je dobra, ugao se pravi važan...',
+  'Libela kaže jedno, zid drugo...',
+  'Samo da nađem gde sam ostavio metar...',
+  'Sve je ravno dok ne staviš libelu...',
+]
+
+export const consultantImages = [
+  '/images/savetnica.png',
+  '/images/savetnica-01.png',
+  '/images/savetnica-02.png',
+  '/images/savetnica-03.png',
+  '/images/savetnica-04.png',
+  '/images/savetnica-05.png',
+  '/images/savetnica-06.png',
+  '/images/savetnica-portret.png',
+]
+
 export const heroBenefits = [
   'Veliki izbor',
   'Stručan savet',
@@ -418,7 +457,7 @@ export const aboutContent = {
     'Kompaniju je 1992. godine osnovao Milan Milošević. Od 6 zaposlenih do preko 100 danas — gradimo poverenje kroz kvalitet proizvoda i stručan savet.',
   certificates: ['ISO 9001', 'ISO 14001', 'ISO 45001'],
   expertise: {
-    image: '/images/savetnica.png',
+    image: '/images/savetnica-03.png',
     eyebrow: 'Stručan tim',
     title: 'Savetovanje u salonu — uzivo, profesionalno i bez žurbe',
     text:
@@ -458,7 +497,12 @@ export const partners = Array.from({ length: 72 }, (_, i) => {
 export const contact = {
   company: 'Milošević DOO',
   tagline: 'Salon keramike i opreme za kupatila',
+  consultantImage: '/images/savetnica-05.png',
+  consultantCaption: 'Stručan savet pri izboru keramike i opreme — dođite u salon.',
   address: 'Železnička 46, 37000 Kruševac',
+  mapsUrl: 'https://maps.app.goo.gl/DmVtxTnuA83orapA8',
+  mapsEmbed:
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.8!2d21.327821!3d43.587128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475687e777adb107%3A0x15abf1e8734183d7!2zTWlsb8WhZXLEm8SH!5e0!3m2!1ssr!2srs!4v1',
   phones: ['+381 37 442 775', '+381 37 421 810'],
   whatsapp: '0621872069',
   email: 'milosevicdoo@gmail.com',

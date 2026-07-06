@@ -35,7 +35,9 @@ export default function Footer() {
 
         <div className="footer__contact">
           <h4>Kontakt</h4>
-          <p>{contact.address}</p>
+          <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer">
+            {contact.address}
+          </a>
           {contact.phones.map((p) => (
             <a key={p} href={`tel:${p.replace(/\s/g, '')}`}>{p}</a>
           ))}

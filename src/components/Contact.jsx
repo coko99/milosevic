@@ -29,6 +29,15 @@ export default function Contact({ embedded = false }) {
         <div className="contact__grid">
           <Reveal className="contact__info">
             <div className="contact__card">
+              <div className="contact__consultant">
+                <img
+                  src={contact.consultantImage}
+                  alt="Savetnica u salonu Milošević DOO"
+                  loading="lazy"
+                />
+                <p>{contact.consultantCaption}</p>
+              </div>
+
               <h3>{contact.company}</h3>
               <p className="contact__tagline">{contact.tagline}</p>
 
@@ -37,7 +46,9 @@ export default function Contact({ embedded = false }) {
                   <Icon name="location" className="icon-circle--sm" />
                   <div>
                     <strong>Adresa</strong>
-                    <span>{contact.address}</span>
+                    <a href={contact.mapsUrl} target="_blank" rel="noopener noreferrer">
+                      {contact.address}
+                    </a>
                   </div>
                 </li>
                 <li>
@@ -125,9 +136,10 @@ export default function Contact({ embedded = false }) {
         <Reveal className="contact__map" delay={200}>
           <iframe
             title="Lokacija Milošević DOO"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.5!2d21.333!3d43.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0e8c8c8c8c9%3A0x0!2z0J_QsNC30LDRgtC-0YHRgtGM!5e0!3m2!1ssr!2srs!4v1"
+            src={contact.mapsEmbed}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
           />
         </Reveal>
       </div>
